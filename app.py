@@ -50,8 +50,8 @@ def predict():
     # time.sleep(5)
     print(pred)
     if pred == 1:
-        return redirect("/success")
-    return redirect("/failure")
+        return render_template("success.html")
+    return render_template("failure.html")
 
 
 @app.route("/success", methods=["GET"])
