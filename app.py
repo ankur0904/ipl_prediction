@@ -47,7 +47,7 @@ def predict():
    
     # print("----------------------", data_array)
     pred = model.predict(test)
-    time.sleep(5)
+    # time.sleep(5)
     print(pred)
     if pred == 1:
         return redirect("/success")
